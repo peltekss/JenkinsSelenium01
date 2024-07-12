@@ -1,12 +1,9 @@
 pipeline {
     agent any
 
-    tools {
-        // Jenkins üzerinde tanımlı JDK ismini kullanın
-        jdk 'JDK21'
-    }
+
     stages {
-        stage('Hello') {
+        stage('Test') {
             steps {
                bat 'mvn test'
             }
